@@ -1,16 +1,7 @@
 .button-group {
   position: fixed;
-  top: 0;
-  left: -398px;
-  border-bottom: 1px solid #ccc;
-}
-
-.device-list-reveal {
-  left: 0;
-  -webkit-transition: left 0.3s ease-out;
-     -moz-transition: left 0.3s ease-out;
-       -o-transition: left 0.3s ease-out;
-          transition: left 0.3s ease-out;
+  top: 0px;
+  left: 50px;
 }
 
 .button-group button {
@@ -20,8 +11,17 @@
   background-color: #fff;
   height: 30px;
   color: #333;
-  font-weight: bold;
-  border: 0;
-  border-right: 1px solid #ccc;
+  border: 1px solid #ccc;
+  border-top: 0;
   cursor: pointer;
+}
+
+.device-icon {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.device-list {
+  display: none;
 }

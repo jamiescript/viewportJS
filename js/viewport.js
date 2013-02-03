@@ -5,7 +5,7 @@
 var url = window.location.pathname,
     deviceList = document.createElement('div');
     deviceList.className = 'button-group';
-    deviceList.innerHTML = '<button class="js-iphone-portrait">Iphone Portrait</button><button class="js-iphone-landscape">Iphone Landscape</button><button class="js-ipad-portrait">Ipad Portrait</button><button class="js-ipad-landscape">Ipad Landscape</button><button class="js-device-slider device-icon">device?</button>';
+    deviceList.innerHTML = '<div class="device-list"><button class="js-iphone-portrait">Iphone Portrait</button><button class="js-iphone-landscape">Iphone Landscape</button><button class="js-ipad-portrait">Ipad Portrait</button><button class="js-ipad-landscape">Ipad Landscape</button></div><button class="js-device-slider device-icon">device?</button>';
 
 document.body.appendChild(deviceList);
 
@@ -35,10 +35,7 @@ document.addEventListener('click', function(e) {
       w = window.open(url,'', 'width=1024,height=768');
       break;
     default:
-      if (e.target.className.indexOf('device-list-reveal') === -1) {
-        e.target.parentNode.className = 'button-group device-list-reveal';
-      }
-      // TODO remove device-list-reveal class name
+      e.target.previousSibling.style.display='block';
     }
   }
 }, false);

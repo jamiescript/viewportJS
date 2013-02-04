@@ -40,7 +40,7 @@ document.addEventListener('click', function(e) {
       window.open(url,'', 'width=1024,height=768');
       break;
     default:
-      e.target.previousSibling.previousSibling.style.display='block';
+      e.target.parentElement.childNodes[0].style.display='block';
     }
   }
 }, false);

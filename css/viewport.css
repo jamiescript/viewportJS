@@ -1,27 +1,26 @@
-.button-group {
-  position: fixed;
-  top: 0px;
-  left: 50px;
+.device-list {
+  display: none;
 }
 
-.button-group button {
-  float: left;
-  margin: 0;
-  padding: 6px;
-  background-color: #fff;
-  height: 30px;
-  color: #333;
-  border: 1px solid #ccc;
-  border-top: 0;
-  cursor: pointer;
+.button-group,
+.device-icon {
+  left: 50px;
+  position: fixed;
+  top: 0;
 }
 
 .device-icon {
-  position: fixed;
-  top: 0;
   left: 0;
 }
 
-.device-list {
-  display: none;
+.button-group button {
+  background-color: #fff;
+  border-width: 0 1px 1px 0;
+  cursor: pointer;
+  height: 30px;
+  margin: 0;
+}
+.button-group button:hover {
+  color: #0088cc;
+  cursor: pointer;
 }

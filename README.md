@@ -9,9 +9,9 @@ Testing responsive web design is generally done by resizing the browser window o
 
 # The Solution
 
-This script will render a block of button elements associated with mobile devices and their orientations. 
+This script will render a block of buttons for common mobile devices with orientations.
 
-Clicking a device will open a the current window with the viewport dimensions of that device.
+Clicking a device will open a the current document with the viewport dimensions of the given device.
 
 <hr/>
 

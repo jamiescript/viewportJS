@@ -5,7 +5,7 @@
   var url = window.location.pathname,
       deviceList = document.createElement('div');
       deviceList.className = 'button-group';
-      deviceList.innerHTML = '<div class="device-list"><button class="js-iphone-portrait">Iphone Portrait</button><button class="js-iphone-landscape">Iphone Landscape</button><button class="js-ipad-portrait">Ipad Portrait</button><button class="js-ipad-landscape">Ipad Landscape</button></div><button class="js-device-slider device-icon">device?</button>';
+      deviceList.innerHTML = '<div class="device-list"><button class="js-iphone-portrait">Iphone Portrait</button><button class="js-iphone-landscape">Iphone Landscape</button><button class="js-ipad-portrait">Ipad Portrait</button><button class="js-ipad-landscape">Ipad Landscape</button></div><button class="js-device-slider device-icon">&#10095;</button>';
 
   document.body.appendChild(deviceList);
 
@@ -39,7 +39,7 @@
         } else {
           e.target.parentElement.childNodes[0].style.display='block';
         };
-        
+
       }
     }
   }, false);

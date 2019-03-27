@@ -1,7 +1,7 @@
 ViewportJS
 ==========
 
-Development utility for testing various device viewports
+Development utility for testing various device viewports. Quite outdated now, but was useful before Chrome Dev Tools began to assist in responsive design.
 
 # The Problem
 
